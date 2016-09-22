@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>  
+	<comment>Jieba分词器配置</comment>
+	<!--用户可以在这里配置自己的自定义扩展字典，可以是字典文件路径，
+	也可以是字典文件所在目录路径，多个路径之间使用分号;分割,字典文件名称必须以.dic结尾 -->
+	<entry key="user_dic">conf/sougou.dic</entry>
+	
+	<!--用户可以在这里配置自己的停用词字典，可以是字典文件路径，
+	也可以是字典文件所在目录路径，多个路径之间使用分号;分割，字典文件名称必须以.dic结尾-->
+	<entry key="stop_word_dic">conf/stopword.dic</entry>
+
+	<!--用户可以在这里配置模型文件所在目录路径,可以留空不配置，
+	如果不配置，则默认会在Classpath下查找prob_emit.txt文件-->
+	<entry key="mode_path"></entry>
+
+	<!--用户可以在这里配置分词模式，可选值有：default,index,search,query-->
+	<entry key="mode">index</entry>
+</properties>
