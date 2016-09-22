@@ -11,6 +11,7 @@ import org.apache.lucene.analysis.Tokenizer;
 
 /**
  * Created by Lanxiaowei
+ * Jieba分词器 兼容Lucene5.x
  */
 public class JiebaAnalyzer extends Analyzer {
     /**分词模式：default、index、search、query*/
