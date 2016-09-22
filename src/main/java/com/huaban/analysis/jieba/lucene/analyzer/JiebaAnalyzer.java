@@ -32,6 +32,10 @@ public class JiebaAnalyzer extends Analyzer {
         this.mode = mode;
     }
 
+    public JiebaAnalyzer(JiebaSegmenter.SegMode mode) {
+        this.mode = mode == null ? null : mode.getValue();
+    }
+
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {
         Tokenizer tokenizer = new SentenceTokenizer();
